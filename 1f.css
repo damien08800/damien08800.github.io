@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+#bl{
+    width: 800px;
+    height: 600px;
+    background-color: rgb(0, 119, 238);
+    padding: 50px;
+}
+#haut{
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+}
+#haut article{
+    flex: auto;
+    margin: 10px;
+    background-color: white;
+}
+#bas{
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+}
+#bas article{
+    flex: auto;
+    margin: 10px;
+    background-color: white;
+}
+@media all and (max-width: 1024px){
+    #haut, #bas{
+        flex-direction: column;
+    }
+    #haut {
+        height: calc((100%/5)*2);
+    }
+    #bas{
+        height: calc((100%/5)*3);
+    }
+}

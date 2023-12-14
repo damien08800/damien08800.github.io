@@ -1,0 +1,39 @@
+
+#bl{
+    width: 800px;
+    height: 600px;
+    background-color: rgb(0, 119, 238);
+    padding: 50px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin: auto;
+}
+#haut{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+#bas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+#haut article, #bas article{
+    background-color: white;
+}
+@media all and (max-width: 1024px){
+    #bl{
+        grid-template-rows: 230px 360px;
+        height: auto;
+        width: auto;
+    }
+    #haut{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px;
+    }
+    #bas{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px 100px;
+    }
+}
